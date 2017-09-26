@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Ostrich";
+    src: url("/fonts/OstrichSansRounded-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Ostrich", sans-serif;
+}
+
+.ni-navigation {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: white;
+}
+
+.ni-navigation span {
+    font-size: 25px;
+    margin-right: 20px;
+}
