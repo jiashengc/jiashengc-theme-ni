@@ -7,14 +7,46 @@
     font-style: normal;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     color: #6997e1;
     font-family: "Ostrich", sans-serif;
     letter-spacing: 2px;
+    background-color: #f7fcfe;
 }
 
 p {
     font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-size: 76px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+
+.ni-margin {
+    margin-bottom: 1000px;
 }
 
 .ni-navigation {
@@ -24,6 +56,7 @@ p {
     flex-direction: row;
     justify-content: flex-start;
     background-color: white;
+    transition: all .4s;
 }
 
 .ni-navigation .ni-logo {
@@ -48,9 +81,23 @@ p {
     margin-right: 20px;
 }
 
+.ni-shrink {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .ni-container-ichi {
-    height: 100vh;
+    display: table;
+    height: 80vh;
+    width: 100vw;
     background-image: url("/images/blue.jpg");
+    background-attachment: fixed;
     background-size: cover;
     background-positon: center center;
+}
+
+.ni-splash {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
