@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
 @font-face {
     font-family: "Ostrich";
     src: url("/fonts/OstrichSansRounded-Medium.otf") format("opentype");
@@ -7,6 +9,10 @@
 
 body {
     font-family: "Ostrich", sans-serif;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .ni-navigation {
