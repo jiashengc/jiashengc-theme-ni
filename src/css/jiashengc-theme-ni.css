@@ -8,7 +8,9 @@
 }
 
 body {
+    color: #6997e1;
     font-family: "Ostrich", sans-serif;
+    letter-spacing: 2px;
 }
 
 p {
@@ -16,15 +18,39 @@ p {
 }
 
 .ni-navigation {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     background-color: white;
 }
 
+.ni-navigation .ni-logo {
+    margin-right: 7px;
+    margin-left: 20px;
+    max-height: 60px;
+}
+
+.ni-navigation .ni-title {
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 45px;
+}
+
+.ni-navigation span:nth-of-type(1) {
+    margin-left: 35px;
+}
+
 .ni-navigation span {
     font-size: 25px;
+    margin-top: 13px;
     margin-right: 20px;
+}
+
+.ni-container-ichi {
+    height: 100vh;
+    background-image: url("/images/blue.jpg");
+    background-size: cover;
+    background-positon: center center;
 }

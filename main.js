@@ -9,6 +9,7 @@ let app = express();
 app.use('/', express.static(__dirname + '/src/views'));
 app.use('/css', express.static(__dirname + '/src/css'));
 app.use('/fonts', express.static(__dirname + '/src/fonts'));
+app.use('/images', express.static(__dirname + '/src/images'));
 
 // Prepare Server from node modules
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
