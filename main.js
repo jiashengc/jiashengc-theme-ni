@@ -14,7 +14,9 @@ app.use('/', express.static(__dirname + '/src/resume'));
 
 // Prepare Server from node modules
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+app.use('/css', express.static(__dirname + '/node_modules/hover.css/css'))
 app.use('/js', express.static(__dirname + '/node_modules/vue/dist'));
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
+
 
 app.listen(8080);
