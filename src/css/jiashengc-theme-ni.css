@@ -32,7 +32,7 @@ body {
     color: #30476A;
     font-family: "Ostrich", sans-serif;
     letter-spacing: 2px;
-    background-color: #EDF5FA;
+    background-color: #F2F2F4;
 }
 
 h2 {
@@ -48,6 +48,7 @@ nav {
     left: 0;
     top: 0;
     width: 100vw;
+    z-index: 100;
 }
 
 .ni-margin {
@@ -86,8 +87,8 @@ nav {
 }
 
 .ni-navigation span {
-    font-size: 25px;
-    margin-top: 13px;
+    font-size: 30px;
+    margin-top: 9px;
     margin-right: 20px;
     transition: all .4s;
 }
@@ -102,7 +103,7 @@ nav {
 }
 
 .ni-shrink span {
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 /**
@@ -146,18 +147,27 @@ nav {
 .ni-container-ni {
     text-align: center;
     margin-top: 75px;
+    margin-bottom: 125px;
+    display: inline-block;
+    width: 100%;
 }
 
 .ni-work-portfolio {
     height: 100%;
-    padding: 0;
-    margin: 0;
+    margin-top: 25px;
+}
+
+.ni-work {
+    display: block;
+}
+
+.ni-row {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
 }
 
 .ni-work-portfolio-split {
@@ -166,16 +176,16 @@ nav {
 
 .ni-work-item {
     text-align: left;
-    margin: 30px;
+    margin: 20px;
     background: white;
     height: 130px;
-    width: 400px;
+    width: 300px;
     transition: all .25s;
 }
 
 @media (min-width: 768px) {
     .ni-work-item {
-        width: 400px;
+        width: 375px;
     }
 }
 
@@ -205,6 +215,47 @@ nav {
     max-height: 130px;
     float: left;
 }
+
+/**
+    NI DIVIDER
+ */
+
+.ni-divider {
+    margin: 0 auto;
+    height: 200px;
+    width: 100%;
+    background-image: url("/images/fish.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.ni-divider-overlay {
+    display: flex;
+    margin: 0 auto;
+    background: rgba(253, 240, 216, .15);
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.ni-divider img {
+    margin: auto;  /* Magic! */
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/**
+    NI FOOTER
+ */
+
+.ni-footer {
+    margin: 0;
+    height: 250px;
+    background-color: #30476A;
+}
+
 
 /**
     REPLACE HOVER.CSS
