@@ -60,20 +60,20 @@ nav {
  */
 
 .ni-navigation {
+    color: #f7fcfe;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #FBFDFD;
-    transition: all .4s;
+    background-color: rgba(232, 234, 237, 0);
+    transition: all .25s;
 }
 
 .ni-navigation .ni-logo {
     margin-right: 7px;
     margin-left: 20px;
-    max-height: 60px;
-    transition: all .4s;
+    max-height: 50px;
 }
 
 .ni-navigation .ni-title {
@@ -87,23 +87,24 @@ nav {
 }
 
 .ni-navigation span {
-    font-size: 30px;
-    margin-top: 9px;
+    font-size: 25px;
+    margin-top: 7px;
     margin-right: 20px;
-    transition: all .4s;
 }
 
 .ni-shrink {
+    color: #30476A;
     padding-top: 2px;
     padding-bottom: 2px;
+    background-color: #FDFDFB;
 }
 
 .ni-shrink .ni-logo {
-    max-height: 55px;
+    max-height: 45px;
 }
 
 .ni-shrink span {
-    margin-top: 7px;
+    margin-top: 4px;
 }
 
 /**
@@ -217,6 +218,22 @@ nav {
 }
 
 /**
+    NI SKILLS
+ */
+
+.ni-container-yon {
+    display: inline-block;
+    width: 100%;
+    margin-top: 75px;
+    margin-bottom: 125px;
+    text-align: center;
+}
+
+.ni-skills {
+    text-align: center;
+}
+
+/**
     NI DIVIDER
  */
 
@@ -230,14 +247,18 @@ nav {
     background-position: center bottom;
 }
 
-.ni-divider-overlay {
+[class*=ni-divider-overlay] {
     display: flex;
     margin: 0 auto;
-    background: rgba(253, 240, 216, .15);
+    background: rgba(253, 240, 216, .25);
     width: 100%;
     overflow: hidden;
     height: 100%;
     z-index: 2;
+}
+
+.ni-divider-overlay-2 {
+    background: rgba(185, 241, 240, .25);
 }
 
 .ni-divider img {

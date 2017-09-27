@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Jia Sheng Chong | Computer Science Portfolio</title>
     <link rel="shortcut icon" type="image/png" href="images/js-full.png">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -18,7 +19,7 @@
         <div class="row">
 
             <nav class="ni-navigation">
-                <img src="/images/js-normal.png" class="ni-logo">
+                <img src="/images/js-transparent.png" class="ni-logo">
                 <!--<h2 class="ni-title">JS</h2>-->
                 <span>
                     <a href="/" class="hvr-underline-from-center">Home</a>
@@ -114,6 +115,19 @@
                 </div>
             </div>
 
+            <div class="ni-container-yon">
+                <div class="ni-skills">
+                    <h2>Skills</h2>
+                </div>
+            </div>
+
+            <div class="ni-container-san">
+                <div class="ni-divider">
+                    <div class="ni-divider-overlay-2">
+                        <img src="/images/js-transparent.png">
+                    </div>
+                </div>
+            </div>
 
             <footer class="ni-footer">
                 something
@@ -127,10 +141,12 @@
 
     <script>
         $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
+            if ($(document).scrollTop() > $(window).height()) {
                 $('.ni-navigation').addClass('ni-shrink');
+                $('.ni-logo').attr('src', "/images/js-normal.png");
             } else {
                 $('.ni-navigation').removeClass('ni-shrink');
+                $('.ni-logo').attr('src', "/images/js-transparent.png");
             }
         });
     </script>
