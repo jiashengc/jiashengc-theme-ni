@@ -10,7 +10,7 @@
 }
 
 ::selection {
-    background: rgba(43, 45, 66, .9);
+    background: rgba(224,221,207,.9);
 }
 
 a,
@@ -92,6 +92,10 @@ nav {
     margin-right: 20px;
 }
 
+.ni-navigation span a::selection {
+    background: rgba(43, 45, 66, .9);
+}
+
 .ni-shrink {
     color: #30476A;
     padding-top: 2px;
@@ -105,6 +109,10 @@ nav {
 
 .ni-shrink span {
     margin-top: 4px;
+}
+
+.ni-shrink span a::selection {
+    background: rgba(224,221,207,.9);
 }
 
 /**
@@ -135,10 +143,18 @@ nav {
     margin-bottom: 10px;
 }
 
+.ni-splash h1::selection {
+    background: rgba(43, 45, 66, .9);
+}
+
 .ni-splash p {
     margin: 0;
     margin-top: -5px;
     margin-left: 125px;
+}
+
+.ni-splash p::selection {
+    background: rgba(43, 45, 66, .9);
 }
 
 /**
@@ -286,7 +302,11 @@ nav {
 }
 
 .hvr-underline-from-center:before {
-    background: #30476A;
+    background: #f7fcfe;
     height: 2px;
     border-radius: 2px;
+}
+
+.ni-shrink .hvr-underline-from-center:before {
+    background: #30476A;
 }

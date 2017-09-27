@@ -141,7 +141,7 @@
 
     <script>
         $(window).scroll(function() {
-            if ($(document).scrollTop() > $(window).height()) {
+            if ($(document).scrollTop() > $(window).height() - 50) {
                 $('.ni-navigation').addClass('ni-shrink');
                 $('.ni-logo').attr('src', "/images/js-normal.png");
             } else {
