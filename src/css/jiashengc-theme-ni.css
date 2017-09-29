@@ -315,6 +315,42 @@ nav {
     text-align: center;
 }
 
+.ni-skills h2 {
+    margin-bottom: 45px;
+}
+
+.ni-skills h3 {
+    font-size: 25px;
+}
+
+.ni-skills p {
+    line-height: 24px;
+}
+
+.ni-skill-item {
+    min-height: 425px;
+    text-align: center;
+}
+
+.ni-circle {
+    display: table;
+    margin: 0 auto;
+    width: 135px;
+    height: 135px;
+    background: white;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.ni-circle .fa {
+    margin: 0 auto;
+    font-size: 76px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
 /**
     NI DIVIDER
  */
@@ -354,11 +390,35 @@ nav {
  */
 
 .ni-footer {
+    color: #f7fcfe;
     margin: 0;
     height: 250px;
     background-color: #30476A;
+    text-align: center;
 }
 
+.ni-social {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.ni-footer .fa {
+    font-size: 36px;
+}
+
+.ni-copyright {
+    text-align: center;
+}
+
+.ni-copyright h4 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.ni-copyright p {
+    font-size: 10px;
+    color: aliceblue;
+}
 
 /**
     REPLACE HOVER.CSS
