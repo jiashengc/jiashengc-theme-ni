@@ -137,6 +137,16 @@ nav {
     background-position: center bottom;
 }
 
+.ni-container-ichi-about {
+    display: table;
+    height: 50vh;
+    width: 100vw;
+    background-image: url("/images/fish.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+}
+
 .ni-splash {
     color: #f7fcfe;
     display: table-cell;
@@ -299,6 +309,34 @@ nav {
     }
 }
 
+.ni-about {
+    height: 100%;
+    width: 50%;
+    margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+    .ni-about {
+        margin-left: 15%;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    .ni-about {
+        margin-left: 25%;
+        max-width: 50%;
+        margin-left: 25%;
+    }
+}
+
+.ni-about p {
+    line-height: 28px;
+    font-size: 16px;
+}
+
 /**
     NI SKILLS
  */
@@ -398,12 +436,18 @@ nav {
 }
 
 .ni-social {
+    margin: 15px;
     margin-top: 45px;
-    margin-bottom: 45px;
 }
 
-.ni-footer .fa {
-    font-size: 36px;
+.ni-social .fa {
+    font-size: 46px;
+    margin: 5px;
+    transition: all .25s;
+}
+
+.ni-social .fa:hover {
+    color: #F2F2F4;
 }
 
 .ni-copyright {
@@ -419,6 +463,7 @@ nav {
     font-size: 10px;
     color: aliceblue;
 }
+
 
 /**
     REPLACE HOVER.CSS

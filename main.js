@@ -6,7 +6,9 @@ let express = require('express');
 let app = express();
 
 // Prepare Server from src
-app.use('/', express.static(__dirname + '/src/views'));
+app.use('/', express.static(__dirname + '/src/views', {
+    extensions: ['html']
+}));
 app.use('/css', express.static(__dirname + '/src/css'));
 app.use('/fonts', express.static(__dirname + '/src/fonts'));
 app.use('/images', express.static(__dirname + '/src/images'));

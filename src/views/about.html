@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jia Sheng Chong | Computer Science Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="images/js-full.png">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/hover-min.css" rel="stylesheet" type="text/css">
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/jiashengc-theme-ni.css" rel="stylesheet" type="text/css">
+    <!--<script src="/js/vue.min.js" type="text/javascript"></script>-->
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <nav class="ni-navigation">
+            <img src="/images/js-transparent.png" class="ni-logo">
+            <!--<h2 class="ni-title">JS</h2>-->
+            <span>
+                    <a href="/" class="hvr-underline-from-center">Home</a>
+                </span>
+            <span>
+                    <a href="/about" class="hvr-underline-from-center">About</a>
+                </span>
+            <span>
+                    <a href="https://blog.jiashengc.com" class="hvr-underline-from-center">Blog</a>
+                </span>
+            <span>
+                    <a href="/JiaShengChongResume.pdf" class="hvr-underline-from-center">Resume</a>
+                </span>
+        </nav>
+
+        <div class="ni-container-ichi-about">
+            <div class="ni-splash">
+                <h1>Jia Sheng Chong</h1>
+                <p>About This Developer</p>
+            </div>
+        </div>
+
+        <div class="ni-container-ni">
+            <div class="ni-work">
+                <h2>About</h2>
+                <div class="ni-about col-xs-12">
+                    <p>
+                        Hi! I'm Jia Sheng, I build web applications, and draw Chinese cartoons.
+                    </p>
+
+                    <p>
+                        Originally from Taylor's University, Malaysia. I transferred to Queensland University of Technology (QUT) after completing my first year of studies in Malaysia.
+                        Currently, I'm completing a computer science major and an intelligent systems minor at QUT.
+                    </p>
+
+                    <p>
+                        I started programming since late 2015 where I was introduced to freecodecamp by my brother.
+                        From that that day onwards, I kinda fell in love with web development and started playing around with it alot.
+                    </p>
+
+                    <p>
+                        During my time in Brisbane, I've finally won my first hackathon and gotten my first internship! Woohoo!<br>
+                        So I won the "Sphero" and "Tech" challenge for Angel Hack Brisbane '17 and was the winner of DisruptingEd Hackathon.
+                        I also interned at RedEye Apps during the winter break and currently, I'm building the MVP for a startup called Noshable at the University of Queensland.
+                    </p>
+
+                    <p>
+                        My spare time is usually spent on reading medium articles, drawing Chinese cartoons, and working on my visual novel project.
+                        Hopefully one day, I'll be able to finish the VN.
+                    </p>
+
+                    <p>
+                        Feel free to contact me about the VN, web dev or whatever! I'm always interested in random stuff.
+                        <br>jiashengc@outlook.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ni-container-san">
+            <div class="ni-divider">
+                <div class="ni-divider-overlay-2">
+                    <img src="/images/js-transparent.png">
+                </div>
+            </div>
+        </div>
+
+        <footer class="ni-footer">
+            <div class="row">
+
+                <div class="col-xs-4"></div>
+                <div class="col-xs-4">
+
+                    <div class="ni-social">
+                        <a href="https://github.com/jiashengc">
+                            <i class="fa fa-github-square" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://linkedin/in/jiashengc">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-xs-4"></div>
+
+                <div class="ni-copyright col-xs-12">
+                    <h4>Jia Sheng Chong 2017</h4>
+                    <p>Made with ruv and weeaboo music in the background ✿</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!--<div class="ni-margin">-->
+
+<!--</div>-->
+
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > ($(window).height() / 2) - 50) {
+            $('.ni-navigation').addClass('ni-shrink');
+            $('.ni-logo').attr('src', "/images/js-normal.png");
+        } else {
+            $('.ni-navigation').removeClass('ni-shrink');
+            $('.ni-logo').attr('src', "/images/js-transparent.png");
+        }
+    });
+</script>
+</body>
+
+</html>
+
