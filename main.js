@@ -22,4 +22,4 @@ app.use('/js', express.static(__dirname + '/node_modules/vue/dist'));
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
 
 
-app.listen(8089);
+app.listen(3000);
