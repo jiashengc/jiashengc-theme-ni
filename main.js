@@ -1,9 +1,9 @@
-let http = require('http');
-let url = require('url');
-let fs = require('fs');
-let uc = require('upper-case');
-let express = require('express');
-let app = express();
+var http = require('http');
+var url = require('url');
+var fs = require('fs');
+var uc = require('upper-case');
+var express = require('express');
+var app = express();
 
 // Prepare Server from src
 app.use('/', express.static(__dirname + '/src/views', {
@@ -22,4 +22,4 @@ app.use('/js', express.static(__dirname + '/node_modules/vue/dist'));
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
 
 
-app.listen(8081);
+app.listen(process.env.PORT || 8081);
