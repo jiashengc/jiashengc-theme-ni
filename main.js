@@ -15,11 +15,11 @@ app.use('/images', express.static(__dirname + '/src/images'));
 app.use('/', express.static(__dirname + '/src/resume'));
 
 // Prepare Server from node modules
+app.use('/font-awesome', express.static(__dirname + '/node_modules/font-awesome'));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
-app.use('/font-awesome', express.static(__dirname + '/node_modules/font-awesome'))
 app.use('/css', express.static(__dirname + '/node_modules/hover.css/css'));
 app.use('/js', express.static(__dirname + '/node_modules/vue/dist'));
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
-
+app.use('/js', express.static(__dirname + '/node_modules/jquery.ripples/dist'))
 
 app.listen(process.env.PORT || 8081);
